@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta name="author" content="呱呱-改机型软件作者">
+		<link href="../css/popup.min.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css">
+		<title>iPhone-iOS呱呱免越狱QQ多开修改机型|iOS微信多开官网</title>
+		<script src="//lib.baomitu.com/jquery/3.5.0/jquery.min.js"></script>
+		<script src="//lib.baomitu.com/skel/3.0.1/skel.min.js"></script>
+		<script src="../js/util.js"></script>
+		<script src="//lib.baomitu.com/respond.js/1.4.2/respond.min.js"></script>
+		<script src="../js/popup.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="//apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+			setTimeout(function() {
+				$("#hitokoto").fadeOut(1000);
+			}, 5000);
+
+			function goo() {
+				fetch('https://v1.hitokoto.cn')
+					.then(function(res) {
+						return res.json();
+					})
+					.then(function(data) {
+						var hitokoto = document.getElementById('hitokoto');
+						hitokoto.innerHTML = data.hitokoto;
+						$("#hitokoto").fadeIn(1000);
+					})
+					.catch(function(err) {
+						console.error(err);
+					})
+				setTimeout(function() {
+					$("#hitokoto").fadeOut(1000);
+				}, 5000);
+			}
+			setInterval("goo()", 5800);
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<article id="home" class="panel special" style="display: flex;">
+				<div class="content">
+					<div class="inner">
+						<header>
+							<div class="content">
+								<div class="inner">
+									<h1>
+										<font color="#FF5200">呱呱IOS免越狱多开</font>
+									</h1>
+									<p><strong>呱呱·独家技术支持</strong></p>
+									<p>企鹅🐧:1515877886 </p><br>
+									<p>
+										<font color="#9932CC">★★已开启全国CDN加速★★
+									</p>
+									</font>
+									<p>
+										<font color="#9932CC">遇到无法下载的情况请联系作者解决</font>
+									</p>
+									<p>
+										<font color="#9932CC">可能有下载进度不显示的情况请耐心等待</font>
+									</p>
+									<p>
+										<font color="#9932CC">下载推送版需要先卸载掉官方版</font>
+									</p>
+									<p>
+										<font color="#9932CC">多开版按需下载</font>
+									</p>
+									<p>
+										<font color="#9932CC">以下QQPro一码四开</font>
+									</p><br>
+									<div id="hitokoto">好好努力 带上微笑 没时间纠结 没时间计较</div>
+								</div>
+							</div>
+						</header>
+						<nav id="nav">
+							<ul class="actions vertical special spinY">
+								<li><a href="https://www.pgyer.com/udid" class="button">
+										<font color="#9932CC">独立证书定制</font>
+									</a></li>
+								<li><a href="https://pan.gua.ee/download/6120fba1a6a29d0044723b21?install"
+										class="button">QQPro多开1</a></li>
+								<li><a href="https://pan.gua.ee/download/6120fba1a6a29d0044723b22?install"
+										class="button">QQPro多开2</a></li>
+								<li><a href="https://pan.gua.ee/download/6120fba1a6a29d0044723b23?install"
+										class="button">QQPro多开3</a></li>
+								<li><a href="" class="button">QQPro推送版</a></li>
+								<li><a href="https://pan.gua.ee/download/6120fba1a6a29d0044723b20?install"
+										class="button">
+										<font color="#9932CC">掉签临时解决办法</font>
+									</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</article>
+			<footer id="footer" class="">
+				<p class="copyright">&copy;呱呱不识字</p>
+				<p class="copyright"></p>
+				<center>本站已安全运行:
+					<span id="momk"></span>
+					<script language="javascript">
+						function show_date_time() {
+							window.setTimeout("show_date_time()", 1000);
+							BirthDay = new Date("2020/05/09 09:30:24");
+							today = new Date();
+							timeold = (today.getTime() - BirthDay.getTime());
+							sectimeold = timeold / 1000
+							secondsold = Math.floor(sectimeold);
+							msPerDay = 24 * 60 * 60 * 1000
+							e_daysold = timeold / msPerDay
+							daysold = Math.floor(e_daysold);
+							e_hrsold = (daysold - e_daysold) * -24;
+							hrsold = Math.floor(e_hrsold);
+							e_minsold = (hrsold - e_hrsold) * -60;
+							minsold = Math.floor((hrsold - e_hrsold) * -60);
+							seconds = Math.floor((minsold - e_minsold) * -60);
+							momk.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+						}
+						show_date_time();
+					</script>
+					<style>
+						#momk {
+							animation: change 10s infinite;
+							font-weight: 800;
+						}
+
+						@keyframes change {
+							0% {
+								color: #5cb85c;
+							}
+
+							25% {
+								color: #556bd8;
+							}
+
+							50% {
+								color: #e40707;
+							}
+
+							75% {
+								color: #66e616;
+							}
+
+							100% {
+								color: #67bd31;
+							}
+						}
+					</style>
+				</center>
+			</footer>
+		</div>
+		<script>
+			(function($) {
+				skel.breakpoints({
+					xlarge: '(max-width: 1680px)',
+					large: '(max-width: 1280px)',
+					medium: '(max-width: 980px)',
+					small: '(max-width: 736px)',
+					xsmall: '(max-width: 480px)',
+					xxsmall: '(max-width: 360px)'
+				});
+				$(function() {
+					var $window = $(window),
+						$document = $(document),
+						$body = $('body'),
+						$wrapper = $('#wrapper'),
+						$footer = $('#footer');
+					$window.on('load', function() {
+						window.setTimeout(function() {
+							$body.removeClass('is-loading-0');
+							window.setTimeout(function() {
+								$body.removeClass('is-loading-1');
+							}, 1500);
+						}, 100);
+					});
+					$('form').placeholder();
+					var $wrapper = $('#wrapper'),
+						$panels = $wrapper.children('.panel'),
+						locked = true;
+					$panels.not($panels.first()).addClass('inactive').hide();
+					$panels.each(function() {
+						var $this = $(this),
+							$image = $this.children('.image'),
+							$img = $image.find('img'),
+							position = $img.data('position');
+						$image.css('background-image', 'url(' + $img.attr('src') + ')');
+						if (position) $image.css('background-position', position);
+						$img.hide();
+					});
+					window.setTimeout(function() {
+						locked = false;
+					}, 1250);
+					$('a[href^="#"]').on('click', function(event) {
+						var $this = $(this),
+							id = $this.attr('href'),
+							$panel = $(id),
+							$ul = $this.parents('ul'),
+							delay = 0;
+						event.preventDefault();
+						event.stopPropagation();
+						if (locked) return;
+						locked = true;
+						$this.addClass('active');
+						if ($ul.hasClass('spinX') || $ul.hasClass('spinY')) delay = 250;
+						window.setTimeout(function() {
+							$panels.addClass('inactive');
+							$footer.addClass('inactive');
+							window.setTimeout(function() {
+								$panels.hide();
+								$panel.show();
+								$document.scrollTop(0);
+								window.setTimeout(function() {
+									$panel.removeClass('inactive');
+									$this.removeClass('active');
+									locked = false;
+									$window.triggerHandler('--refresh');
+									window.setTimeout(function() {
+										$footer.removeClass('inactive');
+									}, 250);
+								}, 100);
+							}, 350);
+						}, delay);
+					});
+					if (skel.vars.IEVersion < 12) {
+						$window.on('--refresh', function() {
+							$wrapper.css('height', 'auto');
+							window.setTimeout(function() {
+								var h = $wrapper.height(),
+									wh = $window.height();
+								if (h < wh) $wrapper.css('height', '100vh');
+							}, 0);
+							if (skel.vars.IEVersion < 10) {
+								var $panel = $('.panel').not('.inactive'),
+									$image = $panel.find('.image'),
+									$content = $panel.find('.content'),
+									ih = $image.height(),
+									ch = $content.height(),
+									x = Math.max(ih, ch);
+								$image.css('min-height', x + 'px');
+								$content.css('min-height', x + 'px');
+							}
+						});
+						$window.on('load', function() {
+							$window.triggerHandler('--refresh');
+						});
+						$('.spinX').removeClass('spinX');
+						$('.spinY').removeClass('spinY');
+					}
+				});
+			})(jQuery);
+		</script>
